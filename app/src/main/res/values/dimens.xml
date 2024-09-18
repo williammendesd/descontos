@@ -1,0 +1,11 @@
+<resources>
+    <dimen name="edittext_padding">16dp</dimen>
+    <dimen name="button_padding">16dp</dimen>
+    <dimen name="corner_radius">24dp</dimen>
+    <dimen name="margin_default">16dp</dimen>
+    <dimen name="edit_text_radius">12dp</dimen>
+    <dimen name="edit_text_width">2dp</dimen>
+    <dimen name="button_radius">24dp</dimen>
+    <dimen name="bottom_sheet_vertical_margin">16dp</dimen>
+    <dimen name="bottom_sheet_radius">16dp</dimen>
+</resources>

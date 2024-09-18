@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:lottie="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:padding="16dp"
+    android:background="@color/background_color">
+    <!-- Animação Lottie no topo -->
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/lottieAnimationView"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_gravity="center"
+        lottie:lottie_rawRes="@raw/discount_animation"
+        lottie:lottie_autoPlay="true"
+        lottie:lottie_loop="true"/>
+    <!-- Campo para o preço -->
+    <TextView
+        android:id="@+id/labelPrice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Preço"
+        android:textColor="@color/text_color"
+        android:textSize="18sp"
+        android:paddingBottom="8dp" />
+    <EditText
+        android:id="@+id/editTextPrice"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/custom_edittext"
+        android:inputType="numberDecimal"
+        android:hint="Digite o preço"
+        android:padding="16dp"
+        android:textColor="@color/text_color" />
+    <!-- Campo para o desconto -->
+    <TextView
+        android:id="@+id/labelDiscount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Desconto (%)"
+        android:textColor="@color/text_color"
+        android:textSize="18sp"
+        android:paddingTop="16dp"
+        android:paddingBottom="8dp" />
+    <EditText
+        android:id="@+id/editTextDiscount"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/custom_edittext"
+        android:inputType="numberDecimal"
+        android:hint="Digite a porcentagem de desconto"
+        android:padding="16dp"
+        android:textColor="@color/text_color" />
+    <!-- Botões -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:paddingTop="16dp">
+        <Button
+            android:id="@+id/buttonCalculate"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Calcular"
+            android:textColor="@color/white"
+            android:background="@drawable/custom_button"
+            android:padding="16dp" />
+        <Button
+            android:id="@+id/buttonClear"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Limpar"
+            android:textColor="@color/white"
+            android:background="@drawable/custom_button"
+            android:layout_marginStart="16dp"
+            android:padding="16dp" />
+    </LinearLayout>
+</LinearLayout>

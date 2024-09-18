@@ -1,0 +1,42 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:lottie="http://schemas.android.com/apk/res-auto"
+    android:layout_width ="match_parent"
+    android:layout_height ="wrap_content"
+    android:orientation ="vertical"
+    android:padding="16dp"
+    android:background ="@drawable/bottom_sheet_background" >
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/lottieAnimationViewResult"
+        android:layout_width ="200dp"
+        android:layout_height ="200dp"
+        android:layout_gravity ="center"
+        lottie:lottie_rawRes ="@raw/success_animation"
+        lottie:lottie_autoPlay ="true"
+        lottie:lottie_loop ="false"/>
+    <TextView
+        android:id="@+id/textViewDiscountValue"
+        android:layout_width ="wrap_content"
+        android:layout_height ="wrap_content"
+        android:text="@string/discount_value"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:paddingTop ="16dp"
+        android:textColor="@color/text_color" />
+    <TextView
+        android:id="@+id/textViewTotalPrice"
+        android:layout_width ="wrap_content"
+        android:layout_height ="wrap_content"
+        android:text="@string/price_with_discount"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:paddingTop ="8dp"
+        android:textColor="@color/text_color" />
+    <Button
+        android:layout_marginVertical ="@dimen/margin_default"
+        android:id="@+id/buttonClose"
+        android:layout_width ="match_parent"
+        android:layout_height ="wrap_content"
+        android:text="@string/label_ok"
+        android:layout_gravity ="end"/>
+</LinearLayout >
